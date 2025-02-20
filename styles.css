@@ -34,12 +34,13 @@ article {
   box-sizing: border-box;
 }
 article .post-banner {
-  width: auto;
-  max-height: 200px;
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
   border-radius: 24px;
   margin-left: auto;
   margin-right: auto;
-  display: block;
   margin-bottom: 20px;
 }
 article .post-tag {
