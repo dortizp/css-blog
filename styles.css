@@ -7,8 +7,8 @@ h1 {
   margin: 0;
 }
 .blog-container h1 {
-  display: block;
-  margin: auto;
+  /* display: block; */
+  /* margin: auto; */
   text-align: center;
 }
 .blog-container > p {
@@ -20,18 +20,20 @@ h1 {
   height: 100vh;
   background-color: lightyellow;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 article {
   max-width: 350px;
-  max-height: 600px;
   border: 2px solid black;
   background: #ccc;
   border-radius: 24px;
   margin-top: 20px;
-  margin-left: auto;
-  margin-right: auto;
   padding: 20px;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
 }
 article .post-banner {
   width: 100%;
@@ -44,8 +46,11 @@ article .post-banner {
   margin-bottom: 20px;
 }
 article .post-tag {
-  display: inline;
+  /* display: inline; */
   padding: 6px;
+  flex-basis: auto;
+  width: 50px;
+  text-align: center;
   background-color: orange;
   border-radius: 5px;
   font-size: 10px;
@@ -69,4 +74,24 @@ article .post-content {
 article .avatar-name {
   font-size: 12px;
   font-weight: 700;
+}
+article .post-footer {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+header .header-right {
+  display: flex;
+  gap: 10px;
+}
+footer {
+  display: flex;
+  flex-direction: column;
 }
