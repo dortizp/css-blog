@@ -87,12 +87,28 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 0 20px;
 }
 header .header-right {
   display: flex;
   gap: 10px;
+}
+header .icon {
+  width: 20px;
+  height: auto;
+}
+header button {
+  border: none;
+}
+header .search-bar {
+  display: flex;
+  align-items: center;
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+header .search-bar input {
+  border: none;
 }
 footer {
   display: flex;
